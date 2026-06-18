@@ -26,10 +26,22 @@ internal class UIInteraction : MonoBehaviour
         addPrice.SetActive(true);
     }
 
+    public void Prices1ToPrices2()
+    {
+        createPricemenu1.SetActive(false);
+        createPricemenu2.SetActive(true);
+    }
+
+    public void Prices2ToPrices1()
+    {
+        createPricemenu2.SetActive(false);
+        createPricemenu1.SetActive(true);
+    }
+
     public void BackToMenu()
     {
         createPricemenu1.SetActive(false);
-        //createPricemenu2.SetActive(false);
+        createPricemenu2.SetActive(false);
         //editPrice.SetActive(false);
         //addPrice.SetActive(false);
         menuTransform.SetActive(true);
